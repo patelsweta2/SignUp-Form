@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- <h2>Login Form</h2> -->
+      <form class="form">
+        <div class="text">Email</div>
+        <input
+          type="email"
+          placeholder="Example@email.com"
+          class="email"
+          id="email"
+          oninput="validateEmailPassword()"
+        />
+        <div id="mailMsg"></div>
+        <div class="text">Password</div>
+        <input
+          type="text"
+          placeholder="Your Password"
+          class="password"
+          id="password"
+          oninput="validateEmailPassword()"
+        />
+        <div id="passwordMsg"></div>
+        <div id="success"></div>
+        <button class="btn" id="btn" onclick="validateForm()">Submit</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
